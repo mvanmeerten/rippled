@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/rippled/my_build/CMakeFiles/soci"
+		},
+		{
+			"file" : "/rippled/my_build/CMakeFiles/soci.rule"
+		},
+		{
+			"file" : "/rippled/my_build/CMakeFiles/soci-complete.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/soci-stamp/soci-install.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/soci-stamp/soci-mkdir.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/soci-stamp/soci-download.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/soci-stamp/soci-update.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/soci-stamp/soci-patch.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/soci-stamp/soci-configure.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/soci-stamp/soci-build.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/soci-stamp/soci-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"soci"
+		],
+		"name" : "soci"
+	}
+}

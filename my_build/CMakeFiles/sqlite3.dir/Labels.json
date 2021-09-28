@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/rippled/my_build/CMakeFiles/sqlite3"
+		},
+		{
+			"file" : "/rippled/my_build/CMakeFiles/sqlite3.rule"
+		},
+		{
+			"file" : "/rippled/my_build/CMakeFiles/sqlite3-complete.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/sqlite3-stamp/sqlite3-install.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/sqlite3-stamp/sqlite3-mkdir.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/sqlite3-stamp/sqlite3-download.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/sqlite3-stamp/sqlite3-update.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/sqlite3-stamp/sqlite3-patch.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/sqlite3-stamp/sqlite3-configure.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/sqlite3-stamp/sqlite3-build.rule"
+		},
+		{
+			"file" : "/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/sqlite3-stamp/sqlite3-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sqlite3"
+		],
+		"name" : "sqlite3"
+	}
+}

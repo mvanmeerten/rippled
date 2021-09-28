@@ -1,0 +1,14 @@
+# Target labels
+ libarchive
+# Source files and their labels
+/rippled/my_build/CMakeFiles/libarchive
+/rippled/my_build/CMakeFiles/libarchive.rule
+/rippled/my_build/CMakeFiles/libarchive-complete.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/libarchive-stamp/libarchive-install.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/libarchive-stamp/libarchive-mkdir.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/libarchive-stamp/libarchive-download.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/libarchive-stamp/libarchive-update.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/libarchive-stamp/libarchive-patch.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/libarchive-stamp/libarchive-configure.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/libarchive-stamp/libarchive-build.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/libarchive-stamp/libarchive-test.rule

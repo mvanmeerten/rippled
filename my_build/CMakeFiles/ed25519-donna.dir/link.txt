@@ -1,0 +1,2 @@
+/usr/bin/ar qc libed25519-donna.a  CMakeFiles/ed25519-donna.dir/src/ed25519-donna/ed25519.c.o
+/usr/bin/ranlib libed25519-donna.a

@@ -1,0 +1,14 @@
+# Target labels
+ snappy
+# Source files and their labels
+/rippled/my_build/CMakeFiles/snappy
+/rippled/my_build/CMakeFiles/snappy.rule
+/rippled/my_build/CMakeFiles/snappy-complete.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/snappy-stamp/snappy-install.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/snappy-stamp/snappy-mkdir.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/snappy-stamp/snappy-download.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/snappy-stamp/snappy-update.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/snappy-stamp/snappy-patch.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/snappy-stamp/snappy-configure.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/snappy-stamp/snappy-build.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/snappy-stamp/snappy-test.rule

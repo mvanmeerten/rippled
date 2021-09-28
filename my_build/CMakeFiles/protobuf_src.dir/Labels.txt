@@ -1,0 +1,14 @@
+# Target labels
+ protobuf_src
+# Source files and their labels
+/rippled/my_build/CMakeFiles/protobuf_src
+/rippled/my_build/CMakeFiles/protobuf_src.rule
+/rippled/my_build/CMakeFiles/protobuf_src-complete.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/protobuf_src-stamp/protobuf_src-install.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/protobuf_src-stamp/protobuf_src-mkdir.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/protobuf_src-stamp/protobuf_src-download.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/protobuf_src-stamp/protobuf_src-update.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/protobuf_src-stamp/protobuf_src-patch.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/protobuf_src-stamp/protobuf_src-configure.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/protobuf_src-stamp/protobuf_src-build.rule
+/rippled/.nih_c/unix_makefiles/GNU_7.5.0/Release/src/protobuf_src-stamp/protobuf_src-test.rule

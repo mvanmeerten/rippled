@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpbufs.a  CMakeFiles/pbufs.dir/proto_gen/ripple.pb.cc.o
+/usr/bin/ranlib libpbufs.a
