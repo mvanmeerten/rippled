@@ -267,6 +267,10 @@ PeerImp::send(std::shared_ptr<Message> const& m)
              << " sendq: " << sendq_size;
     }
 
+    std::string const n = name();
+    JLOG(p_journal_.error()) << "Sending message to: "
+        << (n.empty() ? remote_address_.to_string() : n) << " With contents: " << m;
+
     send_queue_.push(m);
 
     if (sendq_size != 0)
