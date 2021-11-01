@@ -25,6 +25,7 @@
 #include <ripple/basics/Log.h>
 #include <ripple/basics/RangeSet.h>
 #include <ripple/beast/utility/WrappedSink.h>
+#include <ripple/overlay/Compression.h>
 #include <ripple/overlay/Squelch.h>
 #include <ripple/overlay/impl/OverlayImpl.h>
 #include <ripple/overlay/impl/ProtocolMessage.h>
@@ -50,6 +51,7 @@ class PeerImp : public Peer,
                 public std::enable_shared_from_this<PeerImp>,
                 public OverlayImpl::Child
 {
+    using Compressed = compression::Compressed;
 public:
     /** Whether the peer's view of the ledger converges or diverges from ours */
     enum class Tracking { diverged, unknown, converged };

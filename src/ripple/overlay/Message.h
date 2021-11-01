@@ -100,6 +100,16 @@ public:
         return validatorKey_;
     }
 
+    
+    /** Get the message type from the payload header.
+     * First four bytes are the compression/algorithm flag and the payload size.
+     * Next two bytes are the message type
+     * @param in Payload header pointer
+     * @return Message type
+     */
+    int
+    getType(std::uint8_t const* in) const;
+
 private:
     std::vector<uint8_t> buffer_;
     std::vector<uint8_t> bufferCompressed_;
@@ -130,14 +140,6 @@ private:
     void
     compress();
 
-    /** Get the message type from the payload header.
-     * First four bytes are the compression/algorithm flag and the payload size.
-     * Next two bytes are the message type
-     * @param in Payload header pointer
-     * @return Message type
-     */
-    int
-    getType(std::uint8_t const* in) const;
 };
 
 }  // namespace ripple

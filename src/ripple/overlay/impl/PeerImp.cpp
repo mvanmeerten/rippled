@@ -269,7 +269,8 @@ PeerImp::send(std::shared_ptr<Message> const& m)
 
     std::string const n = name();
     JLOG(p_journal_.error()) << "Sending message to: "
-        << (n.empty() ? remote_address_.to_string() : n) << " With contents: " << m;
+        << (n.empty() ? remote_address_.to_string() : n)
+        << " With type: " << protocolMessageName(m->getType(m->getBuffer(Compressed::Off).data()));
 
     send_queue_.push(m);
 
