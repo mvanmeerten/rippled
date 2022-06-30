@@ -460,6 +460,7 @@ run(int argc, char** argv)
     // Parse options, if no error.
     try
     {
+        std::cout << "rippled: running ConsensusTesting version " << std::endl;
         po::store(
             po::command_line_parser(argc, argv)
                 .options(all)   // Parse options.

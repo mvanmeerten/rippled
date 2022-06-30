@@ -269,6 +269,13 @@ TransactionAcquire::stillNeed()
 
     if (timeouts_ > NORM_TIMEOUTS)
         timeouts_ = NORM_TIMEOUTS;
+    // Quick fix of liveness bug
+    if (failed_)
+    {
+        JLOG(journal_.error()) << "Still need TXSet after failed";
+        failed_ = false;
+        setTimer(sl);
+    }
 }
 
 }  // namespace ripple
