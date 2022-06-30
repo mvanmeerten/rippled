@@ -106,3 +106,8 @@ compile_commands.json
 .clangd
 
 my_build/
+
+cfg/db*/*
+cfg/rippled_stdOut*
+cfg/debug*.log
+cmake-build-debug/*
