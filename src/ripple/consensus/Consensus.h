@@ -751,7 +751,8 @@ Consensus<Adaptor>::peerProposalInternal(
             if (newPeerProp.proposeSeq() <=
                 peerPosIt->second.proposal().proposeSeq())
             {
-                return false;
+                JLOG(j_.fatal()) << "Got old proposal, seq: " << newPeerProp.proposeSeq() << ", currSeq: " << peerPosIt->second.proposal().proposeSeq();
+//                return false;
             }
         }
 
