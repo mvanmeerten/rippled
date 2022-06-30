@@ -95,6 +95,7 @@ RCLConsensus::Adaptor::Adaptor(
     , nUnlVote_(nodeID_, j_)
 {
     assert(valCookie_ != 0);
+    JLOG(j_.info()) << "rippled: running ConsensusTesting version correct.";
 
     JLOG(j_.info()) << "Consensus engine started"
                     << " (Node: " << to_string(nodeID_)
