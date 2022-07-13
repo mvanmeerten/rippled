@@ -1005,20 +1005,7 @@ LedgerMaster::checkAccept(uint256 const& hash, std::uint32_t seq)
 
         auto validations = app_.validators().negativeUNLFilter(
             app_.getValidations().getTrustedForLedger(hash));
-
-        auto masterKey = app_.validators().getTrustedKey(app_.getValidationPublicKey());
-        if (!masterKey)
-            masterKey = app_.validators().getListedKey(app_.getValidationPublicKey());
-        auto ownNodeId = calcNodeID(*masterKey);
-        std::vector<std::shared_ptr<STValidation>> ownValidationVec;
-        for (const auto& validation : validations) {
-            JLOG(m_journal.fatal()) << "own_pub: " << ownNodeId << " other_pub: " << validation->getNodeID();
-        }
-        std::copy_if(validations.begin(), validations.end(), std::back_inserter(ownValidationVec), [&ownNodeId](std::shared_ptr<ripple::STValidation> val) {
-            return val->getNodeID() == ownNodeId;
-        });
-        valCount = ownValidationVec.size();
-        JLOG(m_journal.fatal()) << "Signed by self: " << valCount;
+        valCount = validations.size();
         if (valCount >= app_.validators().quorum())
         {
             std::lock_guard ml(m_mutex);
@@ -1084,27 +1071,7 @@ LedgerMaster::checkAccept(std::shared_ptr<Ledger const> const& ledger)
     auto const minVal = getNeededValidations();
     auto validations = app_.validators().negativeUNLFilter(
         app_.getValidations().getTrustedForLedger(ledger->info().hash));
-
-    auto masterKey = app_.validators().getTrustedKey(app_.getValidationPublicKey());
-    auto tvc = 0;
-    if (!masterKey)
-        masterKey = app_.validators().getListedKey(app_.getValidationPublicKey());
-    if (masterKey) {
-        auto ownNodeId = calcNodeID(*masterKey);
-        std::vector<std::shared_ptr<STValidation>> ownValidationVec;
-        for (const auto& validation : validations) {
-            JLOG(m_journal.fatal()) << "own_pub: " << ownNodeId << " other_pub: " << validation->getNodeID();
-        }
-        std::copy_if(validations.begin(), validations.end(), std::back_inserter(ownValidationVec), [&ownNodeId](std::shared_ptr<ripple::STValidation> val) {
-            return val->getNodeID() == ownNodeId;
-        });
-        tvc = ownValidationVec.size();
-    } else {
-        JLOG(m_journal.fatal()) << "Master key not set";
-        tvc = 0;
-    }
-    JLOG(m_journal.fatal()) << "Signed by self: " << tvc;
-
+    auto const tvc = validations.size();
     if (tvc < minVal)  // nothing we can do
     {
         JLOG(m_journal.trace())
