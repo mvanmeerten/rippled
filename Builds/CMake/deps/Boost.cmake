@@ -22,7 +22,6 @@ if (WIN32 OR CYGWIN)
     endif ()
   endif ()
 endif ()
-set (BOOST_ROOT C:/lib/boost)
 message (STATUS "BOOST_ROOT: ${BOOST_ROOT}")
 message (STATUS "BOOST_LIBRARYDIR: ${BOOST_LIBRARYDIR}")
 
