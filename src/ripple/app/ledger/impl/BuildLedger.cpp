@@ -133,7 +133,6 @@ applyTransactions(
                         break;
 
                     case ApplyResult::Fail:
-                        JLOG(j.fatal()) << "Transaction " << txid << " failed";
                         failed.insert(txid);
                         it = txns.erase(it);
                         break;

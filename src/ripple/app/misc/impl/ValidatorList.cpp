@@ -1755,7 +1755,7 @@ ValidatorList::calculateQuorum(
     // AbsoluteMinimumQuorum which is 60% of the original UNL size. The
     // effective quorum should not be lower than it.
     auto quorum = static_cast<std::size_t>(std::max(
-        std::ceil(effectiveUnlSize * 0.2f), std::ceil(unlSize * 0.2f)));
+        std::ceil(effectiveUnlSize * 0.4f), std::ceil(unlSize * 0.4f)));
 //        std::ceil(effectiveUnlSize * 0.8f), std::ceil(unlSize * 0.6f)));
 
     // Use lower quorum specified via command line if the normal quorum
