@@ -1374,7 +1374,7 @@ ApplicationImp::setup()
     }
     JLOG(m_journal.info()) << "process starting: "
                            << BuildInfo::getFullVersionString();
-    JLOG(m_journal.info()) << "rippled: running ProposalBug version.";
+    JLOG(m_journal.info()) << "rippled: running b1-proposal-bug version.";
 
     if (numberOfThreads(*config_) < 2)
     {
